@@ -1,4 +1,4 @@
-# 🇬🇧 Illia Voitsekhovskyi - Portfolio
+# ![United Kingdom](https://flagcdn.com/w40/gb.png) Illia Voitsekhovskyi - Portfolio
 
 A modern personal portfolio website presenting my background, selected projects, skills, and contact information.
 
@@ -20,7 +20,7 @@ Built with a clean, responsive UI and lightweight JavaScript interactions, inclu
 
 ---
 
-# 🇫🇮 Illia Voitsekhovskyi - Portfolio
+# ![Finland](https://flagcdn.com/w40/fi.png) Illia Voitsekhovskyi - Portfolio
 
 Moderni portfolioverkkosivusto, joka esittelee taustani, valitut projektit, taitoni ja yhteystietoni.
 
