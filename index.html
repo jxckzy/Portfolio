@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Illia Voitsekhovskyi — Software Engineer</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo" aria-label="Go to top">IV</a>
+    <div class="nav-links">
+      <a href="#about">about</a>
+      <a href="#work">work</a>
+      <a href="#contact">contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas id="particles"></canvas>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Helsinki, Finland</p>
+      <h1 class="hero-name">Illia<br>Voitsekhovskyi</h1>
+      <p class="hero-typed"><span id="typed-text"></span><span class="cursor">|</span></p>
+      <div class="hero-cta">
+        <a href="#work" class="btn-solid">see my work</a>
+        <a href="#contact" class="btn-outline">get in touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">scroll</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="sec-label">About</span>
+      </div>
+      <div class="about-grid">
+        <div class="about-text-col">
+          <p class="about-lead">I build backends, integrate AI, and care deeply about craft.</p>
+          <p class="about-body">First-year B.Eng student at Metropolia University of Applied Sciences, Helsinki. I approach engineering the same way I approach everything — with curiosity and a drive to make things that matter. Beyond code, I am a photographer, a language enthusiast, and a volunteer teacher.</p>
+        </div>
+        <div class="stats-col">
+          <div class="stat-card">
+            <span class="stat-number">6</span>
+            <span class="stat-label">languages spoken</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">3</span>
+            <span class="stat-label">projects shipped</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">48h</span>
+            <span class="stat-label">hackathon build</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">2025</span>
+            <span class="stat-label">started B.Eng</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section section-dark" id="work">
+    <div class="container">
+      <div class="section-header">
+        <span class="sec-label light">Key Projects</span>
+      </div>
+      <div class="projects-grid">
+
+        <article class="proj-card featured" onclick="window.open('https://github.com/jxckzy/supercell-hackathon-2-26', '_blank', 'noopener,noreferrer')" style="cursor: pointer;">
+          <div class="proj-top">
+            <span class="proj-badge">Featured</span>
+            <span class="proj-date">02 / 2026</span>
+          </div>
+          <h3 class="proj-title">Web-based game "Sheriff"</h3>
+          <p class="proj-where">Supercell AI Hackathon · Helsinki</p>
+          <p class="proj-desc">Led a team to design and ship an AI-powered browser game from scratch in 48 hours. Built core game logic, integrated AI via FastAPI, and delivered a responsive Phaser.js frontend.</p>
+          <div class="proj-tags">
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag teal">Phaser.js</span>
+            <span class="tag teal">AI</span>
+            <span class="tag teal more-tech" data-project="sheriff" role="button" tabindex="0">+3 more</span>
+          </div>
+        </article>
+
+        <article class="proj-card" onclick="window.open('https://github.com/nikosilan/py_projekti', '_blank', 'noopener,noreferrer')" style="cursor: pointer;">
+          <div class="proj-top">
+            <span class="proj-date">08 – 12 / 2025</span>
+          </div>
+          <h3 class="proj-title">Interactive Flight Game</h3>
+          <p class="proj-where">University Project · Espoo</p>
+          <p class="proj-desc">Evolved a text-based concept into a full online browser game. Led Python backend development with Flask, managed MySQL databases, and coordinated team workflow end-to-end.</p>
+          <div class="proj-tags">
+            <span class="tag">Flask</span>
+            <span class="tag">MySQL</span>
+            <span class="tag teal">Git</span>
+            <span class="tag teal">Python</span>
+            <span class="tag teal more-tech" data-project="flight" role="button" tabindex="0">+3 more</span>
+          </div>
+        </article>
+
+        <article class="proj-card" onclick="window.open('https://github.com/jxckzy/HTML-CSS-Assignment', '_blank', 'noopener,noreferrer')" style="cursor: pointer;">
+          <div class="proj-top">
+            <span class="proj-date">11 / 2025</span>
+          </div>
+          <h3 class="proj-title">Home Decor Brand Site</h3>
+          <p class="proj-where">NestAura · Espoo</p>
+          <p class="proj-desc">Built a responsive, user-friendly website for a home decor brand. Focused on clean structure, engaging design, and custom CSS animations to enhance visual appeal.</p>
+          <div class="proj-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag teal">JavaScript</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS + VOLUNTEER + LANGUAGES -->
+  <section class="section" id="more">
+    <div class="container">
+      <div class="bottom-grid">
+
+        <div class="bottom-col">
+          <span class="sec-label">Skills</span>
+          <div class="skills-group">
+            <p class="skills-sublabel">Languages & Frameworks</p>
+            <div class="skills-row">
+              <span class="skill">Python</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">HTML / CSS</span>
+              <span class="skill">FastAPI</span>
+              <span class="skill">Flask</span>
+              <span class="skill">Phaser.js</span>
+            </div>
+          </div>
+          <div class="skills-group">
+            <p class="skills-sublabel">Tools & Infrastructure</p>
+            <div class="skills-row">
+              <span class="skill">MySQL</span>
+              <span class="skill">Git</span>
+              <span class="skill">MQTT</span>
+              <span class="skill">Linux</span>
+            </div>
+          </div>
+          <div class="skills-group">
+            <p class="skills-sublabel">Beyond Engineering</p>
+            <div class="skills-row">
+              <span class="skill">Team Leadership</span>
+              <span class="skill">Teaching Languages</span>
+              <span class="skill">Photography</span>
+              <span class="skill">Consulting Ukrainian Refugees</span>
+              <span class="skill">Swimming</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-col">
+          <span class="sec-label">Volunteer</span>
+          <div class="vol-card">
+            <div class="vol-accent"></div>
+            <div>
+              <p class="vol-title">English Teacher Mentor</p>
+              <p class="vol-meta">Teach for Ukraine · 02/2026 – 05/2026</p>
+              <p class="vol-desc">Supporting migrant children with interrupted schooling — contributing to language development and continued academic growth.</p>
+            </div>
+          </div>
+
+            <span class="sec-label" style="margin-top: 2rem; display: block;">Education</span>
+            <div class="vol-card">
+                <div class="vol-accent teal"></div>
+                <div>
+                    <p class="vol-title">B.Eng in Information Technology</p>
+                    <p class="vol-meta">Metropolia University of Applied Sciences</p>
+                    <p class="vol-desc">2025 – 2029 · Helsinki, Finland</p>
+                </div>
+            </div>
+            <div class="vol-card">
+                <div class="vol-accent teal"></div>
+                <div>
+                    <p class="vol-title">Course in Computer Science</p>
+                    <p class="vol-meta">IT STEP Academy · Kyiv, Ukraine</p>
+                    <p class="vol-desc">2018 – 2023 · Grade: A</p>
+                    <p class="vol-desc" style="margin-top: 5px;">Web Development & Design, Game Development, 3D
+                        Modelling & Animation, Python Programming</p>
+                </div>
+            </div>
+
+          <span class="sec-label" style="margin-top: 2rem; display: block;">Languages</span>
+          <div class="lang-chips">
+            <span class="lang-chip">Ukrainian</span>
+            <span class="lang-chip">Finnish B2</span>
+            <span class="lang-chip">English C1</span>
+            <span class="lang-chip">Russian C1</span>
+            <span class="lang-chip more-langs" role="button" tabindex="0">+ 2 more</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <div class="container contact-inner">
+      <p class="contact-eyebrow">Let's connect</p>
+      <h2 class="contact-heading">Open to internships,<br>collaborations & interesting projects.</h2>
+      <div class="contact-links">
+        <a href="mailto:illiavoitsekhovskyi19@gmail.com" class="contact-btn">Email</a>
+        <a href="https://linkedin.com/in/illia-voitsekhovskyi" target="_blank" class="contact-btn">LinkedIn</a>
+        <a href="https://github.com/jxckzy" target="_blank" class="contact-btn">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>Illia Voitsekhovskyi · Helsinki</span>
+    <span>+358-46-6345110</span>
+  </footer>
+
+  <div id="tech-modal-overlay" class="tech-modal-overlay" aria-hidden="true">
+    <div class="tech-modal" role="dialog" aria-modal="true" aria-label="Expanded project card">
+      <button type="button" class="tech-modal-close" aria-label="Close language list">x</button>
+      <div id="tech-modal-card"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
